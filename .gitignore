@@ -1,0 +1,6 @@
+venv
+data_custom.yaml
+yolov8n.pt
+yolov8s.pt
+yolov8m.pt
+yolov8l.pt
