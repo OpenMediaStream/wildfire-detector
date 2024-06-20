@@ -19,7 +19,7 @@ model = YOLO("./runs/detect/nano5epochs/weights/best.pt")
 
 # Como treinar um novo modelo
 
-Crie um arquivo .yaml chamado data_custom.yaml com os caminhos nescessarios para o seu dataset. O projeto utiliza do seguinte dataset:  
+Crie um arquivo .yaml chamado data_custom.yaml com os caminhos nescessarios para o seu dataset. O projeto utiliza o seguinte dataset:  
 <a href="https://drive.google.com/drive/folders/1DWgsQLVgkkLM8m-VcugHNpD5WYDbjYp5">D-Fire</a>
 
 ```yaml
@@ -30,7 +30,8 @@ names:
   0: smoke
   1: fire
 ```
-
+Com o dataset e o seu caminho adicionados, execute o main.py. Algums problemas ao rodar estão com possíveis soluções comentadas no próprio arquivo.  
+É recomendado apenas mudar o número de batch e workers até mais testes serem feitos.
 
 
 # Referências
