@@ -8,13 +8,17 @@ Ative o ambiente virtual
 ```bash
 source venv/bin/activate
 ```
-Instale o ultralytics com pip, todos os outros pacotes nescessarios já dependencias do ultralytics
+Instale o ultralytics com pip, todos os outros pacotes nescessarios já são dependencias do ultralytics
 ```bash
 pip install ultralytics
 ```
 Para testar algum dos modelos, vá para predict.py e troque o caminho para o desejado, segue abaixo um exemplo: 
 ```python
 model = YOLO("./runs/detect/nano5epochs/weights/best.pt")
+```
+Caso queira testar com outras imagens, precisa apenas mudar o caminho do results
+```python
+results = model("path/to/image")
 ```
 
 # Como treinar um novo modelo
