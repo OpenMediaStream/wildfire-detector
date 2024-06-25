@@ -1,0 +1,3 @@
+ultralytics
+mysql-connector-python
+python-dotenv

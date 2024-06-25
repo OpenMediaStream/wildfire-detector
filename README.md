@@ -8,9 +8,9 @@ Ative o ambiente virtual
 ```bash
 source venv/bin/activate
 ```
-Instale o ultralytics com pip, todos os outros pacotes nescessarios já são dependencias do ultralytics
+Instale as dependências com pip
 ```bash
-pip install ultralytics
+pip install -r requirements. txt
 ```
 Para testar algum dos modelos, vá para predict.py e troque o caminho para o desejado, segue abaixo um exemplo: 
 ```python
@@ -34,8 +34,7 @@ names:
   0: smoke
   1: fire
 ```
-Com o dataset e o seu caminho adicionados, execute o main.py. Algums problemas ao rodar estão com possíveis soluções comentadas no próprio arquivo.  
-É recomendado apenas mudar o número de batch e workers até mais testes serem feitos.
+Com o dataset e o seu caminho adicionados, execute o main.py. Algums problemas ao rodar estão com possíveis soluções comentadas no próprio arquivo.
 
 
 # Referências
