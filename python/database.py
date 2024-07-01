@@ -18,7 +18,7 @@ class Coords:
         return coordinates_string
     
     def get_results(img):
-        model = YOLO("./runs/detect/fire_s.pt")
+        model = YOLO('./runs/detect/small200epochs/weights/best.pt')
         results = model(img, iou=0.2, conf=0.4)
 
         return results

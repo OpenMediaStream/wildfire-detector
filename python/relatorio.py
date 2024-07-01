@@ -27,7 +27,7 @@ class Data:
     def draw_box(coords, confs, labels, labels_list, image,):
         colors = Data.get_contrasting_colors(labels_list)
 
-        for i in range(4):
+        for i in range(len(coords)):
             # Gets coords for the box to be drawn
             x1, y1, x2, y2 = map(float, coords[i].split(','))
             x1, y1, x2, y2 = map(int, [x1, y1, x2, y2])
