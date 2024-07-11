@@ -2,9 +2,9 @@ from PIL import Image
 
 from ultralytics import YOLO
 
-model = YOLO("./runs/detect/train/weights/best.pt")
+model = YOLO("./fire_s.pt")
 
-results = model("/home/vinicius/data/teste.jpg", iou=0.1, conf=0.9)
+results = model(["./teste1.jpg", "./teste2.jpg"], iou=0.7, conf=0.4)
 print(results)
 
 for i, r in enumerate(results):
